@@ -37,37 +37,10 @@ nav button:hover,nav button.active{background:var(--yellow);color:#18263a}
 footer{text-align:center;color:var(--muted);padding:18px 24px 28px}@media(max-width:900px){.hero-grid,.two-col,.video-link,.role,.match-row{grid-template-columns:1fr}.options-card{position:static}}
 
 @media(max-width:600px){
-  header{
-    display:flex!important;
-    flex-direction:row!important;
-    align-items:flex-start!important;
-    justify-content:flex-start!important;
-    gap:12px!important;
-    padding:16px!important;
-    text-align:left!important;
-  }
-  .logo{
-    width:74px!important;
-    height:74px!important;
-    min-width:74px!important;
-    min-height:74px!important;
-    aspect-ratio:1/1!important;
-    flex:0 0 74px!important;
-    align-self:flex-start!important;
-    margin:0!important;
-    position:relative!important;
-    top:0!important;
-    left:0!important;
-  }
-  header > div{
-    flex:1 1 auto!important;
-    min-width:0!important;
-  }
-  header h1{
-    font-size:22px!important;
-    line-height:1.15!important;
-    margin-top:0!important;
-  }
+  header{display:flex!important;flex-direction:row!important;align-items:flex-start!important;justify-content:flex-start!important;gap:12px!important;padding:16px!important;text-align:left!important}
+  .logo{width:74px!important;height:74px!important;min-width:74px!important;min-height:74px!important;aspect-ratio:1/1!important;flex:0 0 74px!important;align-self:flex-start!important;margin:0!important}
+  header>div{flex:1 1 auto!important;min-width:0!important}
+  header h1{font-size:22px!important;line-height:1.15!important;margin-top:0!important}
 }
 
 </style>
@@ -88,9 +61,9 @@ footer{text-align:center;color:var(--muted);padding:18px 24px 28px}@media(max-wi
 <div class="prompt"><strong>Lead-in:</strong>
 <ol>
 <li>Do you think people are born creative, or can creativity be learned?</li>
-<li>When do you usually get your best ideas: when you are working, relaxing, talking to people, or doing something unrelated?</li>
-<li>Can doing something boring or unfamiliar make you more creative?</li>
-<li>What habits could help someone collect more ideas and experiences?</li>
+<li>When do you feel most creative: under pressure, when relaxed, or when working with other people?</li>
+<li>Can doing something boring or unfamiliar lead to a useful idea?</li>
+<li>What habits help you remember and develop new ideas?</li>
 </ol>
 </div>
 </div>
@@ -213,7 +186,28 @@ But in hindsight, Grenny realized he'd actually been doing much more than merely
 <tr><td>grapple with</td><td>try hard to understand or deal with</td><td>Uncomfortable conversations make us grapple with other perspectives.</td></tr>
 <tr><td>jot down</td><td>write quickly</td><td>Jot down ideas when they come.</td></tr>
 </tbody></table></div>
-<div class="card"><h3>Speaking Questions</h3><ol><li>Do you think creativity is learnable?</li><li>How can curiosity make someone more creative?</li><li>Why can boring tasks sometimes lead to insights?</li><li>What would you put in your “shoebox” of ideas?</li></ol></div>
+
+<div class="card">
+<h3>Vocabulary Gap Fill</h3>
+<p class="hint">Drag the correct word or phrase into each sentence.</p>
+<div class="two-col inner">
+<div>
+<div class="sentence-gap"><span class="q-num">1</span>Grenny found himself <span class="dropzone inline-drop" data-answer="in over his head"></span> because he had no experience with the project.</div>
+<div class="sentence-gap"><span class="q-num">2</span>Before looking for solutions, you should clearly <span class="dropzone inline-drop" data-answer="frame the problem"></span>.</div>
+<div class="sentence-gap"><span class="q-num">3</span>A boring task may begin as a <span class="dropzone inline-drop" data-answer="chore"></span> but end with a useful idea.</div>
+<div class="sentence-gap"><span class="q-num">4</span>Uncomfortable conversations can force us to <span class="dropzone inline-drop" data-answer="grapple with"></span> another person’s perspective.</div>
+<div class="sentence-gap"><span class="q-num">5</span>When inspiration arrives, quickly <span class="dropzone inline-drop" data-answer="jot down"></span> your thoughts.</div>
+<button class="small-btn" onclick="checkDrops(this)">Check answers</button>
+</div>
+<div class="mini-bank">
+<button class="option-pill" draggable="true">jot down</button>
+<button class="option-pill" draggable="true">chore</button>
+<button class="option-pill" draggable="true">frame the problem</button>
+<button class="option-pill" draggable="true">in over his head</button>
+<button class="option-pill" draggable="true">grapple with</button>
+</div>
+</div>
+</div>
 <div class="controls"><button onclick="prevPage()">Previous</button><button onclick="nextPage()">Next</button></div>
 </section>
 
